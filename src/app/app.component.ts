@@ -20,7 +20,15 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
-    }
+    },
+    {
+      title: 'login Page Issue',
+      url: 'login'
+    },
+    {
+      title: 'Sample Form Working',
+      url: '/sample-working-form',
+    },
   ];
 
   constructor(

@@ -1,0 +1,37 @@
+.login_input { 
+    color: #eee;
+    background-color: #2564b7;
+    height: 66px;
+    margin-bottom: 7px;
+  }
+
+ ion-icon {
+     height: 32px;
+     width: 32px;
+     margin: 10px 0;
+ }
+
+  .log {
+    margin: 22px -10px 10px -18px;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0.2;
+  }
+
+  .eye_wrapper { margin: 12px -15px; }
+
+  ion-input {
+    font-size: 1.3em!important;
+    margin-top: 5px!important;
+    --placeholder-color: #c8d9ed;
+    --placeholder-opacity: 1;
+  }
+
+  .login-button {
+    font-size: 18px;
+    font-weight: normal;
+    height: 50px;
+    width: 100%;
+    letter-spacing: 1px;
+    --background: #80b92e;
+  }

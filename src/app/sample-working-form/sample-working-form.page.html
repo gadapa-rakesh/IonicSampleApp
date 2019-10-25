@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>sample-form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div>
+    <strong> Working Example </strong>
+    Capacitor keyboard accessory bar next and previous button are enabled and works as expected.
+    <br />
+    <strong> Note -> </strong> Ion-input is not wrapped inside any ion-row/ion-item.
+    <br />
+    Also the password keystore option wors as expected and fills both username and password field.
+    <div text-center>
+      <ion-icon name="arrow-round-down"></ion-icon>
+    </div>
+  </div>
+
+  <form [formGroup]="sampleForm">
+    <ion-input placeholder="Username" type="text" formControlName="username"></ion-input>
+    <ion-input placeholder="Password" type="password" formControlName="password"></ion-input>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-button class="login-button" mode="ios">Login
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
