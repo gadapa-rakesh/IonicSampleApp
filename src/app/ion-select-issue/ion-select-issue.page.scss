@@ -1,0 +1,35 @@
+ion-content {
+    --background: #eeeeef;
+}
+
+.input_row { 
+    color: #000000;
+    background-color: #ffffff;
+    height: 50px;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+.col_sel ion-select {
+    float: left;
+    color: var(--ion-color-primary) !important;
+    font-weight: 400;
+    width: calc(100% - 20px);
+    margin: 0 0 20px 0; 
+    padding: 16px 16px 16px 10px;
+    border: none;
+    border-radius: none;
+    -webkit-appearance: none;
+}
+
+.down_arrow_icon {
+    position: absolute;
+    right: 8px;
+    color: var(--ion-color-primary);
+    background: #fff;
+    z-index: 20;
+    height: 40px;
+    width: 42px;
+    margin-top: 5px;
+    pointer-events: none;
+}

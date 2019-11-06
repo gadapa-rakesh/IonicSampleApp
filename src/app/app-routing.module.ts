@@ -22,7 +22,17 @@ const routes: Routes = [
   {
     path: 'sample-working-form',
     loadChildren: './sample-working-form/sample-working-form.module#SampleWorkingFormPageModule'
-  }
+  },
+  {
+    path: 'ion-select-issue',
+    loadChildren: './ion-select-issue/ion-select-issue.module#IonSelectIssuePageModule'
+  },
+  {
+    path: 'ion-spinner-issue',
+    loadChildren: './ion-spinner-issue/ion-spinner-issue.module#IonSpinnerIssuePageModule'
+  },
+  { path: 'ion-modal-issue', 
+    loadChildren: './ion-modal-issue/ion-modal-issue.module#IonModalIssuePageModule' }
 ];
 
 @NgModule({

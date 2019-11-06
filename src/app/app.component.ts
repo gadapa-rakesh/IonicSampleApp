@@ -29,6 +29,18 @@ export class AppComponent {
       title: 'Sample Form Working',
       url: '/sample-working-form',
     },
+    {
+      title: 'Ion-select issue',
+      url: 'ion-select-issue'
+    },
+    {
+      title: 'Ion-spinner animation issue',
+      url: 'ion-spinner-issue'
+    },
+    {
+      title: 'Ion-modal issue',
+      url: 'ion-modal-issue'
+    }
   ];
 
   constructor(

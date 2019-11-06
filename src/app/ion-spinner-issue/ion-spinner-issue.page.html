@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Ion-spinner Issue
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row class="alt_clr">
+      <ion-spinner align='center' class='custom-spinner'></ion-spinner>
+      <div class="spinner-content">Loading Content</div>
+    </ion-row>
+
+    <ion-row>
+      <ion-icon name="arrow-round-up"></ion-icon>
+    </ion-row>
+
+    <ion-row padding>
+      <strong>Issue 1 -> Reopening ion-spinner animation issue</strong>
+      ion-spinner not animating on ios devices, when kept inside an ion-row.
+      <br />
+      Our developers did test the spinner animation; it worked and the ticket was resolved but our QA's were able to
+      reproduce the issue.
+      It happens on OS-13 devices as well. It has the same issue as it was reported earlier.
+      Switching to another tab and then back to the original tab somehow fixes the issue.
+    </ion-row>
+
+
+  </ion-grid>
+</ion-content>
