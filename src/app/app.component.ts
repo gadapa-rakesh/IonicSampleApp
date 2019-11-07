@@ -17,11 +17,6 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    },
-    {
       title: 'login Page Issue',
       url: 'login'
     },
@@ -38,8 +33,16 @@ export class AppComponent {
       url: 'ion-spinner-issue'
     },
     {
-      title: 'Ion-modal issue',
-      url: 'ion-modal-issue'
+      title: 'ion-slides',
+      url: 'ion-slides'
+    },
+    {
+      title: 'status-bar-scroll-top',
+      url: 'status-bar-scroll'
+    },
+    {
+      title: 'ion-modal',
+      url: 'ion-modal'
     }
   ];
 

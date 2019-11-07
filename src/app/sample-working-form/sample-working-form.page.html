@@ -22,7 +22,7 @@
   </div>
 
   <form [formGroup]="sampleForm">
-    <ion-input placeholder="Username" type="text" formControlName="username"></ion-input>
+    <ion-input placeholder="Username" type="text" formControlName="username" maxlength="5"></ion-input>
     <ion-input placeholder="Password" type="password" formControlName="password"></ion-input>
 
     <ion-row>
@@ -32,4 +32,11 @@
       </ion-col>
     </ion-row>
   </form>
+
+  <ion-row padding>
+    <strong>Issue -> Maxlength does not work on Android</strong>
+    Works fine on iOS Device.
+    <br />
+    <strong>Question -></strong> Can we control character limt on ion-search bar?
+  </ion-row>
 </ion-content>

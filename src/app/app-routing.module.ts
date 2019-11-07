@@ -12,10 +12,6 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  },
-  {
     path: 'login',
     loadChildren: './login/login.module#LoginPageModule'
   },
@@ -31,8 +27,18 @@ const routes: Routes = [
     path: 'ion-spinner-issue',
     loadChildren: './ion-spinner-issue/ion-spinner-issue.module#IonSpinnerIssuePageModule'
   },
-  { path: 'ion-modal-issue', 
-    loadChildren: './ion-modal-issue/ion-modal-issue.module#IonModalIssuePageModule' }
+  {
+    path: 'ion-slides',
+    loadChildren: './ion-slides/ion-slides.module#IonSlidesPageModule'
+  },
+  {
+    path: 'status-bar-scroll',
+    loadChildren: './status-bar-scroll/status-bar-scroll.module#StatusBarScrollPageModule'
+  },
+  {
+    path: 'ion-modal',
+    loadChildren: './ion-modal/ion-modal.module#IonModalPageModule'
+  }
 ];
 
 @NgModule({
