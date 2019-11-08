@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>ion-select placeholder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <div>
+        <strong> Issue -> Ion-Select placeholder opacity</strong>
+        <br />
+        Need the capability to change ion-select's placeholder's opacity. Currently it is in shadow dom and has class
+        <strong>.select-placeholder </strong>, which has opacity value of 0.33. 
+        We are trying to change that value to 1 as per business requirements..
+        <br />
+        <div text-center>
+          <ion-icon name="arrow-round-down"></ion-icon>
+        </div>
+      </div>
+      <ion-row class="input_row">
+        <ion-col size="12" class="col_sel">
+          <ion-icon name="arrow-down" class="down_arrow_icon" mode="ios" slot=""></ion-icon>
+          <ion-select class="col-select" placeholder="change my opacity">
+            <ng-container *ngFor="let question of questionList">
+              <ion-select-option>
+                {{question}}
+              </ion-select-option>
+            </ng-container>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+    </ion-row>
+  </ion-grid>
+</ion-content>

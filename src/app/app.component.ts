@@ -20,6 +20,26 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'login Page Issue',
+      url: 'login'
+    },
+    {
+      title: 'Sample Form Working',
+      url: '/sample-working-form',
+    },
+    {
+      title: 'Ion-select issue',
+      url: 'ion-select-issue'
+    },
+    {
+      title: 'Ion-spinner animation issue',
+      url: 'ion-spinner-issue'
+    },
+    {
+      title: 'Ion-modal issue',
+      url: 'ion-modal-issue'
     }
   ];
 
