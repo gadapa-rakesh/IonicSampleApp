@@ -1,0 +1,17 @@
+.btn_txt {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: initial;
+    height: 50px;
+    --background-activated: none;
+    --background-focused: none;
+    display: block;
+}
+
+.plain_button {
+    font-size: 18px;
+    color: var(--ion-color-primary);
+    margin: 0 auto !important;
+    width: max-content;
+    display: block;
+}

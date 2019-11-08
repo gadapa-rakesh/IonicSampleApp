@@ -1,0 +1,176 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerDirection="root" no-margin fill="clear" (click)="moveToFirstPage()">
+        <ion-img></ion-img>
+        <span>Back</span>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Status Bar Scroll Issue
+    </ion-title>
+  </ion-toolbar>
+  <ion-grid class="ion-padding-horizontal">
+    <ion-row id="coverage_header">
+      <ion-col size="12">
+        <div text-center>
+          <ion-icon name="arrow-round-up"></ion-icon>
+        </div>
+        <div>
+          <strong> Issue -> Clicking on status Bar doesn't scroll to top.</strong>
+          We noticed this issue on <strong>ios13 devices.</strong> It works fine on os12.x version.
+          Below is a scrollable list, in-order to reproduce the issue scroll down the list.
+          Wait for the scroll event to finish, it should be in stable state.
+          Now click on the native status bar.
+          <strong> Expectation -> </strong> 1.The content inside ion-content should scroll to top.
+          2. While scrolling down if the user clicks on the status bar to scroll, it scrolls but not to the top,
+           has weird behaviour, stops somewhere in the middle of the page.
+           Not sure if this is an issue.
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="tab_wrap">
+      <ion-segment mode="md" [(ngModel)]="selectedTab" (ionChange)="segmentChange($event)" scrollable>
+        <ion-segment-button mode="md" *ngFor="let tab of tabList" [id]="tab.id" value={{tab.index}}>
+          <ion-label>{{tab.text}}</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content no-padding no-margin>
+
+  <ion-slides pager="false" [options]="slideOpts" (ionSlideWillChange)="slideChange()"
+    [ngStyle]="{'min-height.px': sliderHeight}">
+
+    <ion-slide>
+      <ion-list>
+        <ion-item class="first">
+          <ion-label>Pokémon Yellow First Item</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pac-Man</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Super Mario World</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pokémon Yellow</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pac-Man</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Super Mario World</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pokémon Yellow</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pac-Man</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Super Mario World</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pokémon Yellow</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pac-Man</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Super Mario World</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pokémon Yellow</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pac-Man</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Super Mario World</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pokémon Yellow</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pac-Man</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Super Mario World</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pokémon Yellow</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Pac-Man</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Super Mario World</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+
+    <ion-slide>
+      hi
+    </ion-slide>
+
+    <ion-slide>
+      hey
+    </ion-slide>
+
+    <ion-slide>
+      hola
+    </ion-slide>
+
+    <ion-slide>
+      ha ha
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>
