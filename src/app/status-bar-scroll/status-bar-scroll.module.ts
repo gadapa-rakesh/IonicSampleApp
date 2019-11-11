@@ -5,12 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { IonModalIssuePage } from './ion-modal-issue.page';
+import { StatusBarScrollPage } from './status-bar-scroll.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: IonModalIssuePage
+    component: StatusBarScrollPage
   }
 ];
 
@@ -21,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [IonModalIssuePage]
+  declarations: [StatusBarScrollPage]
 })
-export class IonModalIssuePageModule {}
+export class StatusBarScrollPageModule {}

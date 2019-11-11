@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>ion-modal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button (click)="openModal()">Open Model</ion-button>
+
+  <ion-row class="ion-padding">
+    On click of the above button a modal will open, we have customized the css for its display. 
+    This can be found in globals.scss The problem we are facing rite now is the content is too large it won't fit in our modal.
+    We were trying to see if the height can be auto adjusted based to the content.
+
+    Meanwhile, we will also tty to make use of AlertComponent.
+  </ion-row>
+</ion-content>

@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IonModalIssuePage } from './ion-modal-issue.page';
+import { IonSlidesPage } from './ion-slides.page';
 
-describe('IonModalIssuePage', () => {
-  let component: IonModalIssuePage;
-  let fixture: ComponentFixture<IonModalIssuePage>;
+describe('IonSlidesPage', () => {
+  let component: IonSlidesPage;
+  let fixture: ComponentFixture<IonSlidesPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IonModalIssuePage ],
+      declarations: [ IonSlidesPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IonModalIssuePage);
+    fixture = TestBed.createComponent(IonSlidesPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
