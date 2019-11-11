@@ -38,7 +38,8 @@ const routes: Routes = [
   {
     path: 'ion-modal',
     loadChildren: './ion-modal/ion-modal.module#IonModalPageModule'
-  }
+  },
+  { path: 'in-app-browser', loadChildren: './in-app-browser/in-app-browser.module#InAppBrowserPageModule' }
 ];
 
 @NgModule({

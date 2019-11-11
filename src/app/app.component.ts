@@ -43,6 +43,10 @@ export class AppComponent {
     {
       title: 'ion-modal',
       url: 'ion-modal'
+    },
+    {
+      title: 'in-app-browser',
+      url: 'in-app-browser'
     }
   ];
 
